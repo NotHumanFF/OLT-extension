@@ -23,7 +23,7 @@ document.getElementById('run-button').addEventListener('click', () => {
       });
       let i = 1;
       ans.forEach(elem => {
-          // Send console messages to the extension popup
+          // sends
           chrome.runtime.sendMessage({
             action: 'log',
             data: i + " : " + elem
