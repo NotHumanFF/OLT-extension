@@ -1,4 +1,3 @@
-
 function executeCodeOnWebsite() {
     let arr = window.parent.a.secQuesMap[1];
     let ans = [];
@@ -14,7 +13,7 @@ function executeCodeOnWebsite() {
     });
     let i = 1;
     ans.forEach(elem => {
-        // Send console messages to the extension popup
+        // Send 
         chrome.runtime.sendMessage({
           action: 'log',
           data: i + " : " + elem
@@ -23,5 +22,4 @@ function executeCodeOnWebsite() {
     });
 }
 
-// Wait for the page to fully load before executing the code
 window.addEventListener('load', executeCodeOnWebsite);
